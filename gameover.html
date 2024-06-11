@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    * {
+      font-size: 100px;
+      margin: 0px;
+    }
+
+    #tela {
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    #tela {
+      animation: fadeOut 5s forwards;
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <script>
+
+    function deletar() {
+      document.getElementById('tela').remove();
+    }
+
+    function teste() {
+      window.location.href = "https://www.google.com.br";
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="tela" onclick="deletar()"></div>
+
+  Game Over
+
+  <button onclick="teste()"> Reiniciar </button>
+
+</body>
+
+</html>
